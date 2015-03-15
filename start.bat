@@ -46,3 +46,29 @@ if %creators1%==1 goto C_Otterman
 if %creators1%==0 goto mainmenu
 
 :versions1
+cls
+echo Version History
+echo All the changes that were made in the emporium
+echo.
+echo v1 - Hacking Simulator 2015
+echo.
+echo 0. Back
+set /p versions1=Input
+if %versions1%==1 goto V_1
+if %versions1%==0 goto mainmenu
+
+:references1
+cls
+echo Still In Development
+echo.
+echo.
+pause
+goto mainmenu
+
+:quit
+cls
+echo Goodbye then :/
+echo.
+echo.
+pause
+quit
