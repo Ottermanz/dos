@@ -3,16 +3,6 @@ title Dos Emporium V1
 :mainmenu
 color 2
 cls
-echo  _____   ____   _____    ______                            _                
-echo |  __ \ / __ \ / ____|  |  ____|                          (_)                
-echo | |  | | |  | | (___    | |__   _ __ ___  _ __   ___  _ __ _ _   _ _ __ ___  
-echo | |  | | |  | |\___ \   |  __| | '_ ` _ \| '_ \ / _ \| '__| | | | | '_ ` _ \ 
-echo | |__| | |__| |____) |  | |____| | | | | | |_) | (_) | |  | | |_| | | | | | |
-echo |_____/ \____/|_____/   |______|_| |_| |_| .__/ \___/|_|  |_|\__,_|_| |_| |_|
-echo                                          | |                                 
-echo                                          |_|
-echo.
-echo.
 echo Welcome to the Dos Emporium V1 - Hacking Simulator 2015
 echo.
 echo.
