@@ -1,17 +1,17 @@
 @echo off
-title Dos Emporium V1
+title Dos Emporium
 :mainmenu
 color 2
 cls
-echo Welcome to the Dos Emporium V1 - Hacking Simulator 2015
+echo Welcome to the DOS Emporium 
+echo Version 1 - Hacking Simulator 2015
 echo.
 echo.
 echo 1. Creations
 echo 2. Creators
 echo 3. Versions
 echo 4. References
-echo 5. Options
-echo 6. Quit
+echo 5. Quit
 echo.
 echo.
 set /p mainmenu=
@@ -19,8 +19,7 @@ if %mainmenu%==1 goto creations1
 if %mainmenu%==2 goto creators1
 if %mainmenu%==3 goto versions1
 if %mainmenu%==4 goto references1
-if %mainmenu%==5 goto options
-if %mainmenu%==6 goto quit
+if %mainmenu%==5 goto quit
 
 :creations1
 ::THIS IS THE PLACE WHERE ALL THE CREATIONS ARE!!!
@@ -78,18 +77,6 @@ if %versions1%==0 goto mainmenu
 ::It will be like this:
 ::(Creation) - (Creator): (url)
 ::Or something like that
-cls
-echo Still In Development
-echo.
-echo.
-pause>nul
-goto mainmenu
-
-:options
-::These will include the following options:
-::Text Color
-::Backround Color
-::Just for fun :)
 cls
 echo Still In Development
 echo.
