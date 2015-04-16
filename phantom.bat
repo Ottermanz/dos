@@ -1,16 +1,27 @@
 @echo off
 cls
 :startup
-echo >> Initializing Phantom Protocol
-sleep 3>nul
-echo >> Boot Successful
-sleep 0.5>nul
-echo >> Connecting to online server...
-sleep 2>nul
-echo >> Connection Established
-echo >> Client IP: 216.100.95.92
-echo >> Server IP: Hidden (Proxxy)
-sleep 2>nul
+echo Hello
+echo. 
+echo What would you like to do?
+echo.
+set /p input=<<:
+if %input%==phantom
+echo Executing...
+ping 1.1.1.1 -n 1 -w 5000 > nul
+goto actualstartup
+:actualstartup
+cls
+echo // Initializing Phantom Protocol
+ping 1.1.1.1 -n 1 -w 2200 > nul
+echo Boot Successful
+ping 1.1.1.1 -n 1 -w 500 > nul
+echo // Connecting to online server...
+ping 1.1.1.1 -n 1 -w 1500 > nul
+echo Connection Established
+echo Client IP: 216.100.95.92
+echo Server IP: Hidden (Proxxy)
+pause
 cls
 :phase1
 echo dracut: rd_NO_MD: removing MD RAID activation
@@ -26,24 +37,33 @@ echo ata1.00: 62914560 sectors, multi 16: LBA48
 echo ata1.00: configured for MWDMA2
 echo scsi 0:0:0:0: Direct-Access ATA QEMU HARDDISK 0.12 PQ: 0 ANSI: 5
 echo.
-echo virtio-pci 0000:00:04.0: PCI INT A -> Link[LNKD] -> GSI 11 (level, high) -> IRQ 11
-set /p pass1=ENTER PASSCODE>
+echo virtio-pci 0000:00:04.0: PCI INT A -) Link[LNKD] -) GSI 11 (level, high) -) IRQ 11
+set /p pass1=ENTER PASSCODE:
 if %pass1%==bumpinthenight (
     echo ACCESS GRANTED
-    goto phase2
+    ping 1.1.1.1 -n 1 -w 2750 > nul
+    goto phase1save
 ) else (
     echo Incorrect Password
 )
-:phase2
-echo >> Contacting Steam permissions authority
-echo >> Loading assignment 'phase 1' matrix
-echo >> Enabling access pattern
-echo >> Flushing to storage
-echo >> Assignment unlocked
+:phase1save
+cls
+echo // Contacting Steam permissions authority
+ping 1.1.1.1 -n 1 -w 1000 > nul
+echo // Loading assignment 'phase 1' matrix
+ping 1.1.1.1 -n 1 -w 750 > nul
+echo // Enabling access pattern
+ping 1.1.1.1 -n 1 -w 2500 > nul
+echo // Flushing to storage
+ping 1.1.1.1 -n 1 -w 1700 > nul
+echo // Assignment unlocked
+ping 1.1.1.1 -n 1 -w 100 > nul
 echo.
-echo Welcome to the Phantom Protocol, Otterman.
+echo Welcome to the Phantom Protocol.
+ping 1.1.1.1 -n 1 -w 2500 > nul
 echo.
-echo >> Unlock phase 1 completed.
+echo // Unlock phase 1 completed.
+ping 1.1.1.1 -n 1 -w 500 > nul
 echo.
 echo Unlock phase 2 initiated...
 echo.
@@ -52,9 +72,12 @@ echo ata1.00: ATA-7: QEMU HARDDISK, 0.12.1, max UDMA/100
 echo ata1.00: 62914560 sectors, multi 16: LBA48
 echo.
 set /p pass2=ENTER PASSCODE>
-if %pass2%==epic dream worlds
-ACCESS GRANTED
-
+if %pass2%==epic dream worlds (
+        echo ACCESS GRANTED
+        goto phase2pass
+) else (
+        echo INCORRECT PASSWORD
+)
 >> Contacting Steam permissions authority
 >> Loading assignment 'phase 2' matrix
 >> Enabling access pattern
