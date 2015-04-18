@@ -5,7 +5,7 @@ echo Hello
 echo. 
 echo What would you like to do?
 echo.
-set /p input=<<:
+set /p input=Input:
 if %input%==phantom
 echo Executing...
 ping 1.1.1.1 -n 1 -w 5000 > nul
