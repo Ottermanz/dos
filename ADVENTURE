@@ -1,0 +1,32 @@
+@echo off
+  :start
+cls
+echo <::  CLASSIFIED  ::>
+echo The MS-DOS "Adventure"
+echo.
+pause
+goto sex
+  :sex
+cls
+echo First off, are you a female [F] or a male [M]?
+echo.
+set /p sex="[F/M]:"
+if %sex%==M (
+  cls
+  set /p %sex%=Male
+  echo So you are a male, correct?
+  set /p consex="[Y/N]:"
+  if %consex%==Y goto name
+  if %consex%==N goto sex
+)
+if %sex%==F (
+  cls
+  set /p %sex%=Female
+  echo So you are a female, correct?
+  set /p consex="[Y/N]:"
+  if %consex%==Y goto name
+  if %consex%==N goto sex
+)
+  :name
+cls
+echo Okay, so you are a 
