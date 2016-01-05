@@ -1,0 +1,25 @@
+@ECHO OFF
+:smenu
+ECHO o-----------------------------------------------o
+ECHO | __          __            __     __  _______  |
+ECHO | \ \        / /     /\     \ \   / / |__   __| |
+ECHO |  \ \  /\  / /     /  \     \ \_/ /     | |    |
+ECHO |   \ \/  \/ /     / /\ \     \   /      | |    |
+ECHO |    \  /\  /     / ____ \     | |       | |    |
+ECHO |     \/  \/     /_/    \_\    |_|       |_|    |
+ECHO o-----------------------------------------------o
+ECHO.
+ECHO.
+ECHO.
+ECHO Welcome to WAYT: The Text Adventure!
+ECHO.
+ECHO 1. Start
+ECHO 2. Options
+ECHO 3. Credits
+ECHO 4. Quit
+ECHO.
+set /p smenu=Enter:
+if %smenu%==1 goto start
+if %smenu%==2 goto options
+if %smenu%==3 goto credits
+if %smenu%==4 goto quit
