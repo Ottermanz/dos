@@ -1,0 +1,9 @@
+@ECHO OFF
+ECHO --- CREDITS ---
+ECHO.
+pause > nul
+clr
+ECHO --- CAST ---
+ECHO.
+ECHO Otterman............Otterman
+ECHO Kiwi................~Kiwi v2~
