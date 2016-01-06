@@ -9,17 +9,33 @@ ECHO |    \  /\  /     / ____ \     | |       | |    |
 ECHO |     \/  \/     /_/    \_\    |_|       |_|    |
 ECHO o-----------------------------------------------o
 ECHO.
+ECHO---------------The Text Adventure---------------
 ECHO.
-ECHO.
-ECHO Welcome to WAYT: The Text Adventure!
 ECHO.
 ECHO 1. Start
 ECHO 2. Options
-ECHO 3. Credits
+ECHO 3. Credits/Cast
 ECHO 4. Quit
 ECHO.
 set /p smenu=Enter:
-if %smenu%==1 goto start
+if %smenu%==1 goto characters
 if %smenu%==2 goto options
 if %smenu%==3 goto credits
 if %smenu%==4 goto quit
+:characters
+cls
+ECHO -Character Selection-
+ECHO.
+ECHO Choose the character you wish to play as.
+ECHO.
+
+:options
+ECHO OPTIONS??? WHAT OPTIONS?!?
+
+:credits
+cls
+ECHO Here will be the cast and credits when it's actually done.
+
+:quit
+ECHO k den bye
+quit
